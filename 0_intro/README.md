@@ -1,0 +1,5 @@
+# H Index
+The goal of this problem is to compute an efficient solution to find an h index. Given an array of integers where each index represents a paper, and the element at that index represents the number of times that paper has been cited of the researcher's, compute the h-index. The h-index is defined as the largest number $h$ such that a researches has published at least $h$ papers with at least $h$ citations.
+
+# Solution
+A simple brute force approach to the solution would be for every element, to compute the number of elements greater than or equal to it, and find the maximum count of that. Alternatively, a better solution would be to sort the array as every element after a particular element corresponds to that element's h-index. To find the maximum h, we basically find the difference between the length of the array and tje index of the first element which exceeds the difference between the array length and its index.
